@@ -1,5 +1,7 @@
 import React from 'react';
-import image from '../assets/vr-headset-james-yarema.jpg';
+import heroImage from '../assets/vr-headset-james-yarema.jpg';
+import smallImage from '../assets/man-with-headset-minh-pham.jpg';
+import FadeIn from './animations/FadeIn';
 
 export default function About() {
  return (
@@ -9,16 +11,16 @@ export default function About() {
      className="relative overflow-hidden bg-no-repeat bg-cover"
      style={{
       backgroundPosition: '50%',
-      backgroundImage: `url(${image})`,
+      backgroundImage: `url(${heroImage})`,
       // backgroundSize: 'fit',
       height: 750,
      }}
     >
      <div
       className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-      style={{ backgroundColor: 'rgba(0, 0, 0, 0.50)' }}
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
      >
-      <div className="flex justify-center items-center h-full">
+      <FadeIn class={'flex justify-center items-center h-full'}>
        <div className="text-center text-white px-6 md:px-12">
         <h1 className="text-5xl font-bold mt-0 mb-6">
          Escape to the unimaginable
@@ -42,12 +44,12 @@ export default function About() {
          Get started
         </button>
        </div>
-      </div>
+      </FadeIn>
      </div>
     </div>
    </header>
    <section className="text-gray-400 bg-gray-900 body-font">
-    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div className="md:px-8 container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
        Before they sold out
@@ -71,7 +73,7 @@ export default function About() {
      </div>
      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
       <img
-       src={image}
+       src={smallImage}
        className="object-cover object-center rounded"
        alt="hero"
       />

@@ -1,11 +1,13 @@
 import React from 'react';
 import image from '../assets/3d-effect-steve-johnson.jpg';
+import SlideIn from './animations/SlideIn';
 // import image from '../assets/3d-lights-maximalfocus.jpg';
 // import image from '../assets/cyber-landscape-salvatore-andrea-santacroce.jpg';
 
 export default function Pricing() {
  return (
   <div
+   id="pricing"
    className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12"
    style={{
     backgroundImage: `url(${image})`,
@@ -14,94 +16,99 @@ export default function Pricing() {
     backgroundRepeat: 'no-repeat',
    }}
   >
-   <div className="relative py-3 sm:max-w-xl sm:mx-auto bg-opacity-60 backdrop-filter backdrop-blur-lg">
-    <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding bg-opacity-60 border border-gray-200">
-     <div className="max-w-md mx-auto">
-      <div className="divide-y divide-gray-200">
-       <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-        <p>
-         An advanced online playground for Tailwind CSS, including support for
-         things like:
-        </p>
-        <ul className="list-disc space-y-2">
-         <li className="flex items-start">
-          <span className="h-6 flex items-center sm:h-7">
-           <svg
-            className="flex-shrink-0 h-5 w-5 text-cyan-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-           >
-            <path
-             fillRule="evenodd"
-             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-             clipRule="evenodd"
-            />
-           </svg>
-          </span>
-          <p className="ml-2">
-           Customizing your
-           <code className="text-sm font-bold text-gray-900">
-            tailwind.config.js
-           </code>{' '}
-           file
-          </p>
-         </li>
-         <li className="flex items-start">
-          <span className="h-6 flex items-center sm:h-7">
-           <svg
-            className="flex-shrink-0 h-5 w-5 text-cyan-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-           >
-            <path
-             fillRule="evenodd"
-             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-             clipRule="evenodd"
-            />
-           </svg>
-          </span>
-          <p className="ml-2">
-           Extracting classes with
-           <code className="text-sm font-bold text-gray-900">@apply</code>
-          </p>
-         </li>
-         <li className="flex items-start">
-          <span className="h-6 flex items-center sm:h-7">
-           <svg
-            className="flex-shrink-0 h-5 w-5 text-cyan-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-           >
-            <path
-             fillRule="evenodd"
-             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-             clipRule="evenodd"
-            />
-           </svg>
-          </span>
-          <p className="ml-2">Code completion with instant preview</p>
-         </li>
-        </ul>
-        <p>
-         Perfect for learning how the framework works, prototyping a new idea,
-         or creating a demo to share online.
-        </p>
-       </div>
-       <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-        <p>Want to dig deeper into Tailwind?</p>
-        <p>
+   <div className="sm:max-w-lg sm:mx-auto bg-opacity-60 backdrop-filter backdrop-blur">
+    <SlideIn
+     class={
+      'bg-white shadow-lg sm:rounded-3xl sm:p-10 sm:pt-4 bg-clip-padding bg-opacity-60 border border-gray-200'
+     }
+    >
+     <div className="max-w-md mx-auto divide-y divide-gray-200">
+      <div className="space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+       <h3 className="underline text-4xl text-gray-800 font-medium pb-1 xs:pb-2">
+        Pricing
+       </h3>
+       {/* break */}
+       <div className=" block md:flex items-center">
+        <div className="border sm:shadow-2xl w-full relative z-1  rounded shadow-lg overflow-hidden">
+         <h4 className="text-lg font-medium text-black-500 uppercase p-8  text-center border-b border-gray-200 tracking-wide">
+          no <br />
+          membership
+         </h4>
+         <div className="block my-3 sm:flex md:block lg:flex items-center justify-center">
+          <p className="text-center">10$ Admission fee</p>
+         </div>
+         <div className="flex justify-center ">
+          <ul>
+           <li className="flex items-center">
+            <div className="bg-indigo-900 rounded-full p-2 fill-current"></div>
+            <span className="text-gray-700 text-sm ml-3">
+             No setup, pay as go
+            </span>
+           </li>
+           <li className="flex items-center">
+            <div className="bg-indigo-900 rounded-full p-2 fill-current"></div>
+            <span className="text-gray-700 text-sm ml-3">
+             Flat rate 5$ per game
+            </span>
+           </li>
+           <li className="flex items-center">
+            <br />
+            <br />
+           </li>
+          </ul>
+         </div>
          <a
-          href="https://tailwindcss.com/docs"
-          className="text-cyan-600 hover:text-cyan-700"
+          className="border flex items-center justify-center hover:bg-gray-300 h-24 text-md font-semibold text-gray-800 uppercase"
+          href="#"
          >
-          {' '}
-          Read the docs &rarr;{' '}
+          <span>Book a time slot</span>
          </a>
-        </p>
+        </div>
+        <div className="divide-y-4 z-4 sm:px-4 p-4 text-xl sm:hidden">or</div>
+
+        <div className="border sm:shadow-2xl w-full relative z-1  rounded shadow-lg overflow-hidden">
+         <h4 className="text-lg font-medium uppercase p-8 text-center border-b border-black-200 tracking-wide">
+          Premium Membership
+         </h4>
+         <div className="block my-4 sm:flex md:block lg:flex items-center justify-center">
+          <p className="text-center ">5$ Admission fee</p>
+         </div>
+         <div className="flex  justify-center">
+          <ul>
+           <li className="flex items-center ml-3">
+            <div className="bg-indigo-900 rounded-full p-2 fill-current"></div>
+            <span className="text-gray-700 text-sm ml-3">
+             Save 25% for all games
+            </span>
+           </li>
+
+           <li className="flex items-center ml-3">
+            <div className="bg-indigo-900 rounded-full p-2 fill-current"></div>
+            <span className="text-gray-700 text-sm ml-3">
+             10 Free plays on Birthday
+            </span>
+           </li>
+           <li className="flex items-center ml-3">
+            <div className="bg-indigo-900 rounded-full p-2 fill-current"></div>
+            <span className="text-gray-700 text-sm ml-3">
+             15% off food and drinks
+            </span>
+           </li>
+          </ul>
+         </div>
+         <br />
+         <a
+          className="border flex items-center justify-center  hover:bg-gray-300 h-24 text-md font-semibold text-gray-800 uppercase"
+          href="#"
+         >
+          <span>Sign up and book now</span>
+         </a>
+        </div>
        </div>
+       {/* end break */}
       </div>
      </div>
-    </div>
+    </SlideIn>
    </div>
   </div>
  );
