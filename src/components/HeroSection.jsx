@@ -23,9 +23,13 @@ export default function HeroSection() {
       style={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
      >
       <FadeIn class={'flex justify-center items-center h-full'}>
-       <div className="text-center text-white px-6 md:px-12">
-        <h1 className="text-5xl font-bold mt-0 mb-6">
-         Escape to the unimaginable
+       <div className=" text-white px-6 md:px-12">
+        <h1
+         className="glitch_title glitch layers text-5xl font-bold mt-0 mb-6 "
+         data-text="Escape to the unimaginable"
+        >
+         <span>Escape </span>
+         to the unimaginable
         </h1>
         <h3 className="text-3xsm font-bold mb-8">
          The OASIS is an adventure too big for the real world.
@@ -39,7 +43,7 @@ export default function HeroSection() {
         </h3>
         <button
          type="button"
-         className="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+         className="glitch_title inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
          data-mdb-ripple="true"
          data-mdb-ripple-color="light"
         >
@@ -57,10 +61,15 @@ export default function HeroSection() {
        'lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'
       }
      >
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-       Before they sold out
-       <br className="hidden lg:inline-block" />
-       readymade gluten
+      <h1
+       className=" glitch_title glitch layers title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+       data-text="Before they sold out readymade gluten"
+      >
+       <span>
+        Before they sold out
+        <br className="hidden lg:inline-block" />
+        readymade gluten
+       </span>
       </h1>
       <p className="mb-8 leading-relaxed">
        Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant

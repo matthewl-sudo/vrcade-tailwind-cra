@@ -6,7 +6,7 @@ import FadeIn from './animations/FadeIn';
 export default function About() {
  return (
   <>
-   <header>
+   <header id="about">
     <div
      className="relative overflow-hidden bg-no-repeat bg-cover"
      style={{

@@ -25,7 +25,10 @@ export default function SlideIn(props) {
    variants={slideInText}
    initial="offscreen"
    whileInView="onscreen"
-   viewport={{ once: true, amount: 0.4 }}
+   viewport={{
+    // once: true,
+    amount: 0.4,
+   }}
    className={props.class}
   >
    {children}

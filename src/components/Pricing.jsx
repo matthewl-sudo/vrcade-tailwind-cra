@@ -14,12 +14,13 @@ export default function Pricing() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
+    alignItems: 'center',
    }}
   >
    <div className="sm:max-w-lg sm:mx-auto bg-opacity-60 backdrop-filter backdrop-blur">
     <SlideIn
      class={
-      'bg-white shadow-lg sm:rounded-3xl sm:p-10 sm:pt-4 bg-clip-padding bg-opacity-60 border border-gray-200'
+      'bg-white shadow-lg rounded-lg sm:p-10 sm:pt-4 bg-clip-padding bg-opacity-60 border border-gray-200'
      }
     >
      <div className="max-w-md mx-auto divide-y divide-gray-200">
@@ -58,7 +59,7 @@ export default function Pricing() {
           </ul>
          </div>
          <a
-          className="border flex items-center justify-center hover:bg-gray-300 h-24 text-md font-semibold text-gray-800 uppercase"
+          className="border flex items-center justify-center hover:bg-gray-300 h-24 text-md bg-gray-100 font-semibold text-gray-800 uppercase"
           href="#"
          >
           <span>Book a time slot</span>
@@ -98,7 +99,7 @@ export default function Pricing() {
          </div>
          <br />
          <a
-          className="border flex items-center justify-center  hover:bg-gray-300 h-24 text-md font-semibold text-gray-800 uppercase"
+          className="border flex items-center justify-center  hover:bg-gray-300 h-24 text-md bg-gray-100 font-semibold text-gray-800 uppercase"
           href="#"
          >
           <span>Sign up and book now</span>

@@ -15,9 +15,8 @@ export default function FadeIn(props) {
  };
  return (
   <motion.div
-   variants={fadeInText}
-   initial="initial"
-   animate="animate"
+   {...fadeInText}
+   viewport={{ amount: 0.4 }}
    className={props.class}
   >
    {children}

@@ -27,12 +27,12 @@ export default function Contact() {
     <div className="xs:w-100 lg:w-1/2 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden xs:p-10 p-4 flex sm:flex-col  items-end justify-start relative">
      <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75844.83375465381!2d-113.74872922897339!3d53.55507090826835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02123cf672b53%3A0x8904f6c91307008f!2sCtrl%20V!5e0!3m2!1sen!2sca!4v1661533151598!5m2!1sen!2sca"
-      className="inset-0"
+      className="inset-0 rounded-md"
       title="map"
       width="100%"
       height="100%"
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
+      referrerPolicy="no-referrer-when-downgrade"
      ></iframe>
     </div>
     <div className="lg:w-1/4 md:w-1/2 bg-gray-900 relative flex-wrap xs:py-16 rounded justify-items-center shadow-md sm:flex-col">
