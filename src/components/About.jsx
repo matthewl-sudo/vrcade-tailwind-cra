@@ -23,7 +23,7 @@ export default function About() {
       <FadeIn class={'flex justify-center items-center h-full'}>
        <div className="text-center text-white px-6 md:px-12">
         <h1 className="text-5xl font-bold mt-0 mb-6">
-         Escape to the unimaginable
+         Github action workflow test
         </h1>
         <h3 className="text-3xsm font-bold mb-8">
          The OASIS is an adventure too big for the real world.
