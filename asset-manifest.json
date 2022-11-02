@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/vrcade-tailwind-cra/static/css/main.c3c9beb3.css",
+    "main.js": "/vrcade-tailwind-cra/static/js/main.90e55308.js",
+    "static/js/787.021d6f08.chunk.js": "/vrcade-tailwind-cra/static/js/787.021d6f08.chunk.js",
+    "static/media/dystopic_cyberpunk_bladerunner4.png": "/vrcade-tailwind-cra/static/media/dystopic_cyberpunk_bladerunner4.93d223d98db6284d1c9f.png",
+    "static/media/circut_board.jpg": "/vrcade-tailwind-cra/static/media/circut_board.0b7bd77a7eba0ff2d9f8.jpg",
+    "static/media/3d-effect-steve-johnson.jpg": "/vrcade-tailwind-cra/static/media/3d-effect-steve-johnson.3da77b4815893afce27f.jpg",
+    "static/media/vr-headset-james-yarema.jpg": "/vrcade-tailwind-cra/static/media/vr-headset-james-yarema.e4b76bda5211d15a6cbf.jpg",
+    "static/media/man-with-headset-minh-pham.jpg": "/vrcade-tailwind-cra/static/media/man-with-headset-minh-pham.54014342e9283470cfe1.jpg",
+    "index.html": "/vrcade-tailwind-cra/index.html",
+    "main.c3c9beb3.css.map": "/vrcade-tailwind-cra/static/css/main.c3c9beb3.css.map",
+    "main.90e55308.js.map": "/vrcade-tailwind-cra/static/js/main.90e55308.js.map",
+    "787.021d6f08.chunk.js.map": "/vrcade-tailwind-cra/static/js/787.021d6f08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3c9beb3.css",
+    "static/js/main.90e55308.js"
+  ]
+}
